@@ -12,7 +12,7 @@ $person = [
                     "Konor",
                     "Dima",
                     "Misha",
-                    "Akakiy"
+                    "Akakiy",
     ]
 
 ];
