@@ -1,26 +1,13 @@
 <?php
 
-$months = ["Xabib ", "Konor ","Dima ","Misha ","Akakiy "];
-echo $months[0];
+// foreach, white, for, do-white
 
-$person = [
-    "name" => "Xabib",
-    "surname" => "Doe",
-    "age" => 35,
-    "months" => [
-                    "Xabib",
-                    "Konor",
-                    "Dima",
-                    "Misha",
-                    "Akakiy"
-    ]
+$months = ["Хабиб","Конор","Дастин","Тони",];
 
-];
+foreach ($months as $month)
+    {
+        echo $month. PHP_EOL;
 
-echo $person['months'][1];
-echo $person['months'][2];
-echo $person['months'][3];
-echo $person['months'][4];
-echo $person['months'][5];
+    }
 
 ?>
