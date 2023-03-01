@@ -1,15 +1,26 @@
 <?php
 
+$months = ["Xabib ", "Konor ","Dima ","Misha ","Akakiy "];
+echo $months[0];
 
-9 - Типов данных
+$person = [
+    "name" => "Xabib",
+    "surname" => "Doe",
+    "age" => 35,
+    "months" => [
+                    "Xabib",
+                    "Konor",
+                    "Dima",
+                    "Misha",
+                    "Akakiy"
+    ]
 
-Integer  12321312321323123213
-String  "asdsadsdasd"
-Float  3.15
-Boolean  true, false(0, 1)
-Null
-array     []
-Object
-callable
-Resourse
+];
+
+echo $person['months'][1];
+echo $person['months'][2];
+echo $person['months'][3];
+echo $person['months'][4];
+echo $person['months'][5];
+
 ?>
