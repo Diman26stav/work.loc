@@ -1,12 +1,11 @@
 <?php
 
 
-function cook($ingredients, $meal)
-{
-    // echo "Беру $ingredients <br/>";
-    // echo "Готовлю... <br/>";
-    return "Блюдо $meal готово";
+function ploshad($a,$b){
+    $s = $a * $b;
+    echo "Площадь равна " . $s . "<br>";
 }
 
-$meal = cook("мясо, тесто , яйца", "Суп");
-var_dump($meal);
+ploshad(3,7);
+ploshad(45,7);
+ploshad(5,7);
