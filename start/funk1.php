@@ -45,6 +45,7 @@ function rub($a,$b){
 rub(77,12);
 
 
+
 function dollar($a,$b){
     $s = $b / $a;
     $f = round($s,2);
