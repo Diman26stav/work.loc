@@ -40,17 +40,17 @@ function diam($radius)
 function rub($a,$b){
     $s = $b * $a;
 
-    echo $b." Рублей равен " . $s . " Долларов  <br>";
+    echo $b." Долларов равен " . $s . " Рублей  <br>";
 }
-rub(75,5);
+rub(77,12);
 
 
 function dollar($a,$b){
     $s = $b / $a;
     $f = round($s,2);
-    echo $b." Долларов равен " . $f . " Рублей <br>";
+    echo $b." Рублей равен " . $f . " Долларов <br>";
 }
-dollar(75,5);
+dollar(77,15);
 
 
 
