@@ -90,24 +90,62 @@ function hour ($a,$b){
 hour(24,48);
 
 
-function stoim($km){
-    $rashod = 8.6;
-    $cena = 55;
+function stoim($km, $rashod,$cena)
+{
     $za1km = $rashod / 100;
     $vsegoBenz = $za1km * $km;
     $summa = $vsegoBenz * $cena;
+return $summa;
+   }
 
-//    echo $vsegoBenz;
-    echo $km . "км. Проехали, " .$vsegoBenz." Бенз " . $summa . " Цена <br>";
+    $gaz = stoim(2750,8.6,20);
+    $benz = stoim(2750,8.6,45);
+
+    $vsego = $gaz + $benz;
+    echo $vsego;
+
+    echo "<br>" . stoim(2500,8.6,45);
+    echo "<br>" . stoim(2500,8.6,20);
+
+//   $benz = cena(750, 8.6, 48);
+//
+//    function stoimos($km, $rashod,$cena)
+//
+//    $rashod = stoimos()
+//
+//
+//
+//function days($a,$b){
+//    $s = $b * $a;
+//    echo $b." Дней " . $s . " Часов  <br>";
+//}
+//days(24,1);
+//
+//
+//
+
+function radius_es($ploshad, $p)
+{
+    $radius = $ploshad / $p;
+    echo "<br>" . $ploshad . ' Площадь '. "<br>" . $radius .  'Радиус ' . "<br>";
 }
-stoim(1200);
+radius_es(100,3.14 );
+
+//   echo "<br>".$ploshad =  pow(10, 2) / 4 * 3.14;
 
 
-function cena ($cena,$km){
-    $summa = $cena * $km;
-    echo $summa . " сумма <br>";
+
+//radius();
+
+$s = 100;
+$n = 3.14;
+$r = sqrt($s/$n);
+echo "<br>".$r;
+
+
+function dick(){
+
+
 }
-//cena(4.73,5);
-
 
 
