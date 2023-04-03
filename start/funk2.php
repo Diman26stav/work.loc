@@ -1,4 +1,39 @@
 <?php
 
-echo strrev("hello");
+function disk($a , $b , $c){
+    $D = $b*$b-4*$a*$c;
+    echo $D;
+    if ($D>0){
+        $x1 = ($b-sqrt($D))/(2*$a);
+        $x2 = ($b+sqrt($D))/(2*$a);
+        echo "<sub>1</sub> = " . $x1 . "<br>";
+        echo "<sub>2</sub> = " . $x2 . "<br>";
+    }
+    elseif ($D<0){
+        echo ' Нет корней ';
+    }
+    else{
+        echo ' один корень ' . "<br>";
+        $x1 = ($b-sqrt($D))/(2*$a);
+        echo "<sub>1</sub>=" . $x1 . "<br>";
+    }
+
+};
+disk(1,2,1 );
+
+
+function vozrast($a, $b)
+{
+    $s = $a * $b;
+    if ($s >= 18) {
+        echo 'не совершенный 17';
+        exit();
+    } elseif ($s <= 0 || $b <= 0) {
+        echo 'совершеннолетний 18';
+    } else {
+        echo "Возраст " . $b . "<br>";
+    }
+    vozrast(18, 18);
+}
+
 
