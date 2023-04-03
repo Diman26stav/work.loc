@@ -45,19 +45,19 @@
 //
 //cm(3, 10);
 
-//function ploshad($a, $b)
-//{
-//    $s = $a * $b;
-//    if ($s >= 1000) {
-//        echo 'Введите число меньше 1000';
-//        exit();
-//    } elseif ($s <= 0 || $b <= 0) {
-//        echo 'Введите число больше 0';
-//    } else {
-//        echo "Площадь равна " . $s . "<br>";
-//    }
-//    ploshad(11, 33);
-//}
+function ploshad($a, $b)
+{
+    $s = $a * $b;
+    if ($s >= 1000) {
+        echo 'Введите число меньше 1000';
+        exit();
+    } elseif ($s <= 0 || $b <= 0) {
+        echo 'Введите число больше 0';
+    } else {
+        echo "Площадь равна " . $s . "<br>";
+    }
+    ploshad(11, 20);
+}
 
 //function obem($a, $b, $c)
 //{
@@ -98,8 +98,8 @@ function stoim($km, $rashod,$cena)
 return $summa;
    }
 
-    $gaz = stoim(2750,8.6,20);
-    $benz = stoim(2750,8.6,45);
+    $gaz = stoim(300,10,20);
+    $benz = stoim(300,10,55);
 
     $vsego = $gaz + $benz;
     echo $vsego;
@@ -127,7 +127,7 @@ return $summa;
 function radius_es($ploshad, $p)
 {
     $radius = $ploshad / $p;
-    echo "<br>" . $ploshad . ' Площадь '. "<br>" . $radius .  'Радиус ' . "<br>";
+    echo "<br>" . $ploshad . ' Площадь '. "<br>" . $radius .  ' Радиус ' . "<br>";
 }
 radius_es(100,3.14 );
 
@@ -141,11 +141,5 @@ $s = 100;
 $n = 3.14;
 $r = sqrt($s/$n);
 echo "<br>".$r;
-
-
-function dick(){
-
-
-}
 
 
